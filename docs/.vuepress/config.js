@@ -10,13 +10,7 @@ module.exports = {
     description: "Razorthink AI Documentation",
     themeConfig:{
         logo: 'https://guide.razorthink.com/images/Slash.svg',
-        // nav: true,
-        // nav: [
-        //     { text: 'Concepts', link: '/Concepts/' },
-        //     { text: 'Usecase', link: '/Usecase/' },
-        // ],
         nav: navData,
-        // sidebar: 'auto',
         sidebar: sideBarData.map(d => ({ ...d, collapsable: false})),
     },
     plugins: [

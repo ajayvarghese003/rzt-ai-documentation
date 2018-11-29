@@ -4,7 +4,7 @@ videoURL: https://www.youtube.com/watch?v=8lR9scOLE7U
 desc: Razorthink AI Blocks are the fundemental units that carry out a specialized operation. Every block has a well defined input, output and parameters.
 ---
 
-# DL Designer
+# 🖥 DL Designer
 
 Razorthink AI Blocks are the fundemental units that carry out a specialized operation. Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox. Output of a block is also usually a stream of data that can flow into another block as input or to a destination such any datasource metioned earlier.
 
@@ -12,11 +12,11 @@ Razorthink AI Blocks are the fundemental units that carry out a specialized oper
 
 [[toc]]
 
-## Block Inputs
-Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox.
+## DL Blocks
+Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox. Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox.
 
 ## Block Output
-Output of a block is also usually a stream of data that can flow into another block as input or to a destination such any datasource metioned earlier.
+Output of a block is also usually a stream of data that can flow into another block as input or to a destination such any datasource metioned earlier. Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox. Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox.
 
 ## Block Parameters
 A block can receive one or more parameters either dynamically during runtime or static during design. 
@@ -28,9 +28,6 @@ The following types or parameters are supported out-of-the-box:
 |**Number**| Numeric inputs that are either `ints` or `floats` |
 |**Code**| Block of code that could be executed by the block |
 |**Function**| A lambda that performs a simple transformation |
-
-
-
 
 ## Creating a new block
 Razorthink AI provides easy to use Python SDK that you can use to create your own block. Inherit from `StreamBlock` or `BatchBlock` and implement `run` method. A block can either stream data or produce a static JSON as its output.

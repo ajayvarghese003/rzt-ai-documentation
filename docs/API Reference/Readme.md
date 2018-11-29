@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: API-Reference
 videoURL: https://www.youtube.com/watch?v=Hz3d68G_FVY
 desc: Welcome to the User manual for Razorthink AI. Whether you are novice or a advance user. 		
 ---

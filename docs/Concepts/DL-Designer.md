@@ -12,7 +12,7 @@ Razorthink AI Blocks are the fundemental units that carry out a specialized oper
 
 [[toc]]
 
-## Block Inputs
+## DL Blocks
 Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox. Every block has a well defined input, output and parameters. Input (one or more) is usually a stream of data from a datasource such as HDFS, MySQL or even cloud storage such as Google Drive or Dropbox.
 
 ## Block Output

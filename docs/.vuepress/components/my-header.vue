@@ -24,8 +24,11 @@
     return `https://img.youtube.com/vi/${urlArr[urlArr.length - 1]}/mqdefault.jpg`
   }
   
-  const formattedData = mdData.map(i => ({
+  const formattedData = mdData.map(i => {
+    const indexFile = i.children.find( child => child.name === 'Readme.md');
+    return {
     ...i,
+    name: indexFile.meta.attributes.title,
     docLink: `/${i.name}/`,
     children: i.children.filter(child => child.name !== 'Readme.md').map(child => ({
       ...child,
@@ -40,7 +43,7 @@
         }
       } : {})
     }))
-  }))
+  }})
 
   export default {
         data () {
@@ -73,13 +76,10 @@
     font-weight: 700;
     margin-bottom: 23px;
     display: inline-block;
-    color: black;
+    color: #2c3e50;
   }
 
   .section-topics {
-    width: 25.4%;
-    margin-right: 5%;
-    margin-bottom: 50px;
     color: #2c3e50;
     font-weight: normal;
     position: relative;
@@ -113,6 +113,23 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 14px;
+}
+@media all and (min-width: 720px) {
+  .section-topics {
+    width: 25.4%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+  } 
+}
+
+@media all and (max-width: 720px) {
+  .section-topics {
+    margin-bottom: 30px;
+  }
+
+  img.section-topic__image{
+    width:  auto;
+  }
 }
 
 </style>

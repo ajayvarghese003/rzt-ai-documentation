@@ -1,5 +1,5 @@
 ---
-title: Counter aApp
+title: Counter app
 ---
 
 # Counter APP

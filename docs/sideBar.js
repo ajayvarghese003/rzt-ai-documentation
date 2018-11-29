@@ -4,9 +4,8 @@ const sideBarData = data.map(item => {
 	let children = [];
 	if(item.children) {
 		children = item.children.map(child => `/${item.name}/${child.name.replace('.md', '')}`)
+		children = children.filter(i => i !== `/${item.name}/Readme`);
 		console.log('ITEM NAME', children);
-		const introIndex = children.findIndex(i => i === `/${item.name}/Introduction`)
-		children = [ children[introIndex], ...children.filter(i => i !== `/${item.name}/Introduction`)]
 	} 
 	return {
 		title: item.name,
@@ -14,7 +13,7 @@ const sideBarData = data.map(item => {
 	}
 }).filter(i => i.title !== 'Readme.md');
 
-const navData = data.map(item => ({ text: item.name, link: `/${item.name}/Introduction`})).filter(i => i.text !== 'Readme.md');
+const navData = data.map(item => ({ text: item.name, link: `/${item.name}/`})).filter(i => i.text !== 'Readme.md');
 
 console.log('SIDE BAR DATA', JSON.stringify(sideBarData), JSON.stringify(navData));
 

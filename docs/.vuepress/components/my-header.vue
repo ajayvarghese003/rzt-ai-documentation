@@ -61,7 +61,14 @@
   .topic-container {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 14px;
+
   }
+
+  .section-topic__desc {
+    line-height: 20px;
+    font-size: 14px;
+}
 
   .section-title {
     font-size: 30px;
@@ -72,23 +79,23 @@
   }
 
   .section-topics {
-    width: 22%;
-    margin-right: 3%;
+    width: 25.4%;
+    margin-right: 5%;
     margin-bottom: 50px;
     color: #2c3e50;
     font-weight: normal;
   }
 
   img.section-topic__image {
-      width: 100%;
-      height: 118px;      
-      margin-bottom: 15px;
+    width: 100%;
+    height: 138px;
+    margin-bottom: 9px;
   }
 
   .section-topic__title {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
 </style>

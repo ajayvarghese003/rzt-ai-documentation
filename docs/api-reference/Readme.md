@@ -1,5 +1,5 @@
 ---
-title: API-Reference
+title: API Reference
 desc: Welcome to the User manual for Razorthink AI. Whether you are novice or a advance user. 		
 ---
 

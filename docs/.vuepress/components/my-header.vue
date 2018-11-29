@@ -29,7 +29,7 @@
     docLink: `/${i.name}/`,
     children: i.children.filter(child => child.name !== 'Readme.md').map(child => ({
       ...child,
-      link: `/${i.name}/${child.meta.attributes.title.replace(' ', '-')}.html`,
+      link: `/${i.name}/${child.meta.attributes.title.replace(' ', '-').toLowerCase()}.html`,
       ...( child.meta ? {
         meta: {
           ...child.meta,

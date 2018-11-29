@@ -1,5 +1,5 @@
 ---
-title: General Guide
+title: Guide
 ---
 
 # General Guide

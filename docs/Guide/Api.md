@@ -1,5 +1,5 @@
 ---
-title: API Guide
+title: Api
 ---
 
 # API Guide

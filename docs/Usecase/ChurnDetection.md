@@ -1,5 +1,7 @@
 ---
 title: Churn Detection
+videoURL: https://www.youtube.com/watch?v=Hz3d68G_FVY
+desc: Welcome to the User manual for Razorthink AI. Whether you are novice or a advance user. 	
 ---
 
 # Churn Detection
@@ -11,5 +13,5 @@ Welcome to the User manual for Razorthink AI. Whether you are novice or a advanc
 A more detailed description of the video if that is required. Use this space to describe concepts specific to the video. Also use images to further explain the video.
 Remind users that the demo project is read-only and can be edited by cloning it to gain ownership over the project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjg2MjU0NDldfQ==
+eyJoaXN0b3J5IjpbNjc2NTI3MDExXX0=
 -->

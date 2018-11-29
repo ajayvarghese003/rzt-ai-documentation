@@ -1,6 +1,6 @@
 ---
 title: Block SDK
-videoURL: https://www.youtube.com/watch?v=B9vPoCOP7oY
+desc: Blocks are the fundemental units that carry out a specialized operation. Every block has a well defined input, output and parameters.
 ---
 
 # Block SDK Reference

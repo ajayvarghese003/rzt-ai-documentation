@@ -5,7 +5,7 @@
           <a v-bind:href="item.docLink" class="section-title">{{item.name}}</a>
           <div class="topic-container">
             <a v-bind:href="topic.link" v-for="topic in item.children" class="section-topics">
-              <img v-bind:src="topic.meta.attributes.videoThumbnail" class="section-topic__image"/>
+              <img v-if="topic.meta.attributes.videoThumbnail" v-bind:src="topic.meta.attributes.videoThumbnail" class="section-topic__image"/>
               <div class="section-topic__title">{{topic.meta.attributes.title}}</div>
               <div class="section-topic__desc">{{topic.meta.attributes.desc}}</div>
             </a>
@@ -35,9 +35,7 @@
           ...child.meta,
           attributes: {
             ...child.meta.attributes,
-            videoThumbnail: child.meta.attributes.videoURL ?
-              getThumbnail(child.meta.attributes.videoURL) :
-              'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkkAQAAB8AG7jymN8AAAAASUVORK5CYII='
+            ...(child.meta.attributes.videoURL ? { videoThumbnail : getThumbnail(child.meta.attributes.videoURL) } : {})              
           }
         }
       } : {})
@@ -84,6 +82,25 @@
     margin-bottom: 50px;
     color: #2c3e50;
     font-weight: normal;
+    position: relative;
+  }
+
+  a.section-topics:before {
+    opacity: 0;
+    transition: 0.15s ease-in opacity;
+    position: absolute;
+    top: -12px;
+    left: -14px;
+    right: -13px;
+    bottom: -12px;
+    content: '';
+    z-index: -1;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #0000002e;
+  }
+
+  .section-topics:hover:before{
+    opacity: 1;
   }
 
   img.section-topic__image {

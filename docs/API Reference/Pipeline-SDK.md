@@ -1,6 +1,6 @@
 ---
 title: Pipeline SDK
-videoURL: https://www.youtube.com/watch?v=oJ88K9XWnVk
+desc: Blocks are the fundemental units that carry out a specialized operation. Every block has a well defined input, output and parameters.
 ---
 
 # Pipeline SDK Reference

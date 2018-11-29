@@ -5,7 +5,6 @@ const sideBarData = data.map(item => {
 	if(item.children) {
 		children = item.children.map(child => `/${item.name}/${child.name.replace('.md', '')}`)
 		children = children.filter(i => i !== `/${item.name}/Readme`);
-		console.log('ITEM NAME', children);
 	} 
 	return {
 		title: item.name,

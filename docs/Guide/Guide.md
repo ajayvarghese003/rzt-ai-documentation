@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: General Guide
 ---
 
 # General Guide
@@ -25,3 +25,6 @@ Cras euismod venenatis nulla sed fermentum. Etiam venenatis vestibulum metus at 
 ::: tip Warning!!
 Have as much fun as possible!!
 :::
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTI1ODc3MDgyXX0=
+-->

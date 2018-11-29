@@ -1,5 +1,5 @@
 ---
-title: Counter app
+title: Counter aApp
 ---
 
 # Counter APP
@@ -15,3 +15,6 @@ Cras euismod venenatis nulla sed fermentum. Etiam venenatis vestibulum metus at 
 ::: tip Warning!!
 This counter app was developed using VueJS!!
 :::
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY4OTMwMTU3Ml19
+-->

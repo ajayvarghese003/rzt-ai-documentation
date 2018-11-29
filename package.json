@@ -1,0 +1,21 @@
+{
+  "name": "scotch-vuepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.5.0"
+  },
+  "dependencies": {
+    "directory-tree": "^2.1.1",
+    "front-matter": "^3.0.1"
+  }
+}

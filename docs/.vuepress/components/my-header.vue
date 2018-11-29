@@ -72,16 +72,16 @@
   }
 
   .section-topics {
-    width: 31%;
-    margin-right: 2%;
+    width: 22%;
+    margin-right: 3%;
     margin-bottom: 50px;
-    color: initial;
+    color: #2c3e50;
     font-weight: normal;
   }
 
   img.section-topic__image {
       width: 100%;
-      height: 167px;      
+      height: 118px;      
       margin-bottom: 15px;
   }
 

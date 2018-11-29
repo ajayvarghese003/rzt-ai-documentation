@@ -4,15 +4,14 @@ const path = require('path');
 const dirTree = require("directory-tree");
 const fileTree = dirTree(path.join(__dirname, '../'), {extensions:/\.md/});
 
-function getMeta(path, cb) {
+const getMeta = (path, cb) => {
   console.log('Extracting from Path: ', path);
-  const meta = fm(fs.readFileSync(path, 'utf8'));
-  return meta;
+  return fm(fs.readFileSync(path, 'utf8'));
 }
 
 const getFilteredTree = ({name, path, children}) => 
-   ({ name, path, ...(children ? {children: children.filter(item => item.name !== '.vuepress' ? getFilteredTree(item) : null )} : {meta : getMeta(path)}) })
+   ({ name, path, ...(children ? {children: children.map(item => getFilteredTree(item) )} : {meta : getMeta(path)}) })
 
-const generateData = () => fs.writeFile(`${__dirname}/mdFiles.json`, JSON.stringify(getFilteredTree(fileTree).children), 'utf8', () => console.log('Done'));
+const generateData = () => fs.writeFile(`${__dirname}/mdFiles.json`, JSON.stringify(getFilteredTree(fileTree).children.filter(i => !['Readme.md', ".vuepress"].includes(i.name))), 'utf8', () => console.log('Done'));
 
 module.exports = generateData;

@@ -17,7 +17,7 @@ module.exports = {
         // ],
         nav: navData,
         // sidebar: 'auto',
-        sidebar: sideBarData.map(d => ({ ...d, collapsible: true})),
+        sidebar: sideBarData.map(d => ({ ...d, collapsible: false})),
     },
     plugins: [
       generateData()

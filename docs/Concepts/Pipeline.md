@@ -1,6 +1,6 @@
 ---
 title: Pipeline
-videoURL: https://www.youtube.com/watch?v=Hz3d68G_FVY
+videoURL: https://www.youtube.com/watch?v=BupN1HDLAG0
 desc: Welcome to the User manual for Razorthink AI. Whether you are novice or a advance user. 		
 ---
 

@@ -1,0 +1,14 @@
+use-case:
+  - churn-prediction
+  - co-attention
+  - pose-detection
+
+concepts:
+  - blocks
+  - dl-designer
+  - pipeline
+  - recipe
+
+api-reference:
+  - block-sdk
+  - pipeline-sdk
